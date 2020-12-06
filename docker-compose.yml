@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+  db:
+    container_name: flights-record
+    image: mysql:8.0
+    restart: always
+    ports:
+      - 3306:3306
+    env_file:
+      - .env
+    volumes:
+      - /home/jorge/rdevs/flights-record/sql:/docker-entrypoint-initdb.d
+      - /home/jorge/rdevs/flights-record/data:/var/lib/mysql
+      - /home/jorge/rdevs/flights-record/sql_conf:/etc/mysql/conf.d

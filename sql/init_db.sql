@@ -1,0 +1,31 @@
+USE flights;
+
+CREATE TABLE mytable (
+    snapshot_datetime DATETIME,
+    id VARCHAR(255),
+    dTime BIGINT,
+    dTimeUTC BIGINT,
+    aTime BIGINT,
+    aTimeUTC BIGINT,
+    departure_datetime DATETIME,
+    arrival_datetime DATETIME,
+    fly_duration INT,
+    origin VARCHAR(3),
+    destination VARCHAR(3),
+    origin_city VARCHAR(20),
+    origin_city_code VARCHAR(3),
+    destination_city VARCHAR(20),
+    destination_city_code VARCHAR(3),
+    distance FLOAT,
+    airlines VARCHAR(2),
+    price FLOAT,
+    pnr_count INT,
+    n_legs INT,
+    latFrom FLOAT,
+    lngFrom FLOAT,
+    latTo FLOAT,
+    lngTo FLOAT,
+    flight_no INT,
+    flyFrom VARCHAR(3),
+    FlyTo VARCHAR(3)
+    );
