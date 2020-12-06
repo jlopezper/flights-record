@@ -90,11 +90,11 @@ customize_data <- function(flight_data) {
     mutate(airlines =  sapply(.$airlines, paste, collapse=", "),
            fly_duration = as.numeric(difftime(arrival_datetime, departure_datetime, units = "mins")),
            n_legs = sapply(strsplit(id, "|", fixed = TRUE), length)) %>% 
-    left_join(flight_data_aux[c('id...1', 'latFrom', 'lngFrom', 'latTo', 'lngTo', 'flight_no', 'flyFrom...67', 'flyTo...66')],
+    left_join(flight_data_aux[c('id...1', 'latFrom', 'lngFrom', 'latTo', 'lngTo', 'flight_no', 'flyFrom...68', 'flyTo...67')],
               by = c('id' = 'id...1')) %>% 
     rename(
-      flyFrom = flyFrom...67,
-      FlyTo = flyTo...66
+      flyFrom = flyFrom...68,
+      FlyTo = flyTo...67
     )
   
   # return data

@@ -1,6 +1,6 @@
 USE flights;
 
-CREATE TABLE mytable (
+CREATE TABLE flights_historical (
     snapshot_datetime DATETIME,
     id VARCHAR(255),
     dTime BIGINT,

@@ -3,6 +3,7 @@ library(tidyverse)
 library(lubridate)
 library(glue)
 library(yaml)
+source("get_data.R")
 
 config <- read_yaml('config.yml')
 airports <- config$airports
