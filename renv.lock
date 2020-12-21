@@ -51,6 +51,13 @@
       "Repository": "CRAN",
       "Hash": "e031418365a7f7a766181ab5a41a5716"
     },
+    "RMySQL": {
+      "Package": "RMySQL",
+      "Version": "0.10.20",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "022066398851453f187950137e21daad"
+    },
     "Rcpp": {
       "Package": "Rcpp",
       "Version": "1.0.2",
@@ -155,6 +162,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "9c7c703e3b37f52de4a21dd6b33e94dc"
+    },
+    "dotenv": {
+      "Package": "dotenv",
+      "Version": "1.0.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "399c7c43dc639b7ad87add30baec21f1"
     },
     "dplyr": {
       "Package": "dplyr",
