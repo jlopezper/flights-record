@@ -61,7 +61,7 @@ customize_data <- function(flight_data) {
   
   # unnest data that comes from the route columns
   flight_data_aux <- flight_data %>% 
-    unnest(route, names_repair = 'unique')
+    unnest(route, names_repair = tidyr_legacy)
   
   # select relevant columns and grab other ones from the nested dataframes
   flight_data <- 
@@ -90,11 +90,11 @@ customize_data <- function(flight_data) {
     mutate(airlines =  sapply(.$airlines, paste, collapse=", "),
            fly_duration = as.numeric(difftime(arrival_datetime, departure_datetime, units = "mins")),
            n_legs = sapply(strsplit(id, "|", fixed = TRUE), length)) %>% 
-    left_join(flight_data_aux[c('id...1', 'latFrom', 'lngFrom', 'latTo', 'lngTo', 'flight_no', 'flyFrom...68', 'flyTo...67')],
-              by = c('id' = 'id...1')) %>% 
+    left_join(flight_data_aux[c('id', 'latFrom', 'lngFrom', 'latTo', 'lngTo', 'flight_no', 'flyFrom1', 'flyTo1')],
+              by = c('id' = 'id')) %>% 
     rename(
-      flyFrom = flyFrom...68,
-      FlyTo = flyTo...67
+      flyFrom = flyFrom1,
+      FlyTo = flyTo1
     )
   
   # return data
