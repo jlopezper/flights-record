@@ -270,10 +270,10 @@
     },
     "htmltools": {
       "Package": "htmltools",
-      "Version": "0.4.0",
+      "Version": "0.5.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "2d7691222f82f41e93f6d30f169bd5e1"
+      "Hash": "7d651b7131794fe007b1ad6f21aaa401"
     },
     "httr": {
       "Package": "httr",
@@ -540,6 +540,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "507f3116a38d37ad330a038b3be07b66"
+    },
+    "telegram": {
+      "Package": "telegram",
+      "Version": "0.6.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "10a883f135c043cd8bb26863fadc90d6"
     },
     "testthat": {
       "Package": "testthat",
